@@ -47,5 +47,7 @@ export function onRouteQueryChange(callback: (query: LocationQuery) => any, opti
             _query = _.cloneDeep(route.query)
             callback(_query)
         }
+    }, {
+        deep: true
     })
 }
